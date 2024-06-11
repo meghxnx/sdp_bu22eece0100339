@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..16,100..700');
+
+:root {
+    --mainTextColor-light: #000;
+    --secondaryTextColor-light: rgb(51, 51, 51);
+    --mainLinkColor-light: #0da2b8;
+    --mainBorderColor-light: rgb(218, 218, 218);
+    --mainBgColor-light: rgb(249, 250, 251);
+
+    --mainTextColor-dark: #fff;
+    --secondaryTextColor-dark: #16aadb;
+    --mainLinkColor-dark: rgb(30, 190, 214);
+    --mainBorderColor-dark: #2b3031;
+    --mainBgColor-dark: #131415;
+
+    --mainTextColor: var(--mainTextColor-dark);
+    --secondaryTextColor: var(--secondaryTextColor-dark);
+    --mainLinkColor: var(--mainLinkColor-dark);
+    --mainBorderColor: var(--mainBorderColor-dark);
+    --mainBgColor: var(--mainBgColor-dark);
+}
+
+/* Common styles */
+* {
+    font-family: "Roboto Flex", sans-serif;
+    line-height: 1.5em;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--mainBgColor);
+}
+
+p,
+span,
+li {
+    color: var(--secondaryTextColor);
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-size: 1em;
+}
+
+li {
+    line-height: 1.9em;
+}
+
+/* Main container */
+#container--main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Hero section */
+#wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#user-name {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Socials */
+#socials--list {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 6em;
+    flex-wrap: wrap;
+}
+
+#socials--list a {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: var(--secondaryTextColor);
+}
+
+#socials--list a:hover {
+    color: var(--mainTextColor);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/* About Me section */
+#About-me {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card--About-me {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Educational section */
+#educationals--list {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card--techstack {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+#educationals--list {
+    list-style: none;
+    text-decoration-line: underline;
+}
+
+#wrapper--techstack__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack {
+    border: 1px solid var(--mainBorderColor);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+/* Work History section */
+#card--work-history {
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 1px solid var(--mainBorderColor-dark);
+    padding-left: 0;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+/* Soft Skills section */
+#soft--skills__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 1.5em;
+}
+
+/* Known Languages section */
+.known--languages {
+    border: 1px solid var(--mainBorderColor);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+/* Physical Skills section */
+#physical--skills__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    font-size: 0.9em;
+}
+
+/* Extra-curricular Activities section */
+.Extra-curricular-activities {
+    border: 1px solid var(--mainBorderColor);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+/* Hobbies section */
+.Hobbies {
+    border: 1px solid var(--mainBorderColor);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+/* Projects section */
+#card--project__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    font-size: 0.9em;
+}
+
+/* Accomplishments section */
+.Accomplishments {
+    border: 1px solid var(--mainBorderColor);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+/* Line break */
+.line-break {
+    background-color: var(--mainBorderColor);
+    height: 2px;
+}
